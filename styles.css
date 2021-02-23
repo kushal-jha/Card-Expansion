@@ -1,0 +1,42 @@
+body{
+	align-items: center;
+}
+
+.main{
+	display: flex;
+	position: relative;
+	width: 80vw;
+
+}
+
+.box{
+	margin: 10px;
+	border-radius: 70px;
+	width: 10vw;
+	height:60vh ;
+	transition: width 2s ease-in, opacity 1s;
+	color: white;
+	
+
+
+}
+
+.box.active{
+	width:70vw;
+	opacity: 1;
+}
+
+.box h4{
+	
+	font-family: calibri;
+	padding-top: 45vh;
+	padding-left: 2vw;	
+
+}
+
+@media(max-height:200px ){
+	.box:nth-of-type(4)
+	.box:nth-of-type(5){
+		display: none;
+	}
+}
